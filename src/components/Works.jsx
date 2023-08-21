@@ -1,5 +1,4 @@
 import SectionWrapper from "../hoc/sectionWrapper";
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { github } from "../assets";
@@ -15,9 +14,7 @@ const ProjectCard = ({
   source_code_link,
 }) => (
   <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-    <div
-      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full hover:brightness-105"
-    >
+    <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full hover:brightness-105">
       <div className="relative w-full h-[230px]">
         <img
           src={image}
@@ -74,9 +71,26 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        {projects.length >= 1 ? (
+          <>
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={`project-${index}`}
+                index={index}
+                {...project}
+              />
+            ))}
+          </>
+        ) : (
+          <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] md:w-full hover:brightness-105">
+            <div className="relative w-full h-fit">
+              <h3 className={`${styles.padding}`}>Coming Soon...</h3>
+              <div className="w-full">
+                <p>Check out my &nbsp;<a className="blue-text-gradient !underline" href="https://codepen.io/rick1295/">Codepen.io</a> &nbsp; drafts while I update this section!</p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

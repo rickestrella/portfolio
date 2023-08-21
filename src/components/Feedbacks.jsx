@@ -5,8 +5,6 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
-import { useState, useEffect } from "react";
-
 const FeedbackCard = ({
   index,
   name,
@@ -42,24 +40,6 @@ const FeedbackCard = ({
 );
 
 const Feedbacks = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth <= 768); // You can adjust the breakpoint as needed
-    }
-
-    // Initial setup
-    handleResize();
-
-    // Attach event listener
-    window.addEventListener('resize', handleResize);
-
-    // Clean up the event listener when component unmounts
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []); // Empty dependency array means this effect runs only once after initial render
 
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
@@ -73,13 +53,21 @@ const Feedbacks = () => {
       </div>
 
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
+        {testimonials.length >= 1 ? (
+          <>
+          {testimonials.map((testimonial, index) => (
           <FeedbackCard
             key={testimonial.name}
             index={index}
             {...testimonial}
           ></FeedbackCard>
         ))}
+          </>
+        ) : (
+          <>
+          <h1>Coming Soon...</h1>
+          </>
+        )}
       </div>
     </div>
   );
