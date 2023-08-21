@@ -6,7 +6,6 @@ import CanvasLoader from '../Loader'
 
 const Earth = ({isMobile}) => {
   
-  const envelope = useGLTF('../assets/envelope/scene.gltf');
   const earth = useGLTF('../assets/earth/scene.gltf');
 
   return (
