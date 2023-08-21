@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import SectionWrapper from "../hoc/sectionWrapper";
 import { motion } from "framer-motion";
 import { styles } from "../style";
@@ -52,12 +53,12 @@ const ProjectCard = ({
   </motion.div>
 );
 
-const Works = () => {
+const Works = ({t}) => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={`${styles.heroHeadText} mt-8`}>Projects</h2>
+        <p className={styles.sectionSubText}>{t('my_work')}</p>
+        <h2 className={`${styles.heroHeadText} mt-8`}>{t('projects')}</h2>
       </motion.div>
 
       <div className="w-full flex">
@@ -65,8 +66,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-10 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          The following projects showcases my skills and experience through
-          real-world examples of my work.
+          {t('work_showcase')}
         </motion.p>
       </div>
 
@@ -84,9 +84,9 @@ const Works = () => {
         ) : (
           <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] md:w-full hover:brightness-105">
             <div className="relative w-full h-fit">
-              <h3 className={`${styles.padding}`}>Coming Soon...</h3>
-              <div className="w-full">
-                <p>Check out my &nbsp;<a className="blue-text-gradient !underline" href="https://codepen.io/rick1295/">Codepen.io</a> &nbsp; drafts while I update this section!</p>
+              <h3 className={`${styles.paddingX} pt-8 text-lg`}>{t('coming_soon')}</h3>
+              <div className="w-full px-8 md:px-6 py-16 md:py-10 text-xl">
+                <p>{t('work_check_out')} &nbsp;<a className="blue-text-gradient !underline hover:underline" href="https://codepen.io/rick1295/">Codepen.io</a> &nbsp; {t('work_check_out_end')}</p>
               </div>
             </div>
           </div>

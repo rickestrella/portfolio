@@ -2,7 +2,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../style";
-import { services } from "../constants";
+import { getServices } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import { SectionWrapper } from "../hoc";
@@ -30,27 +30,24 @@ const ServiceCard = ({index, title, icon}) => {
   )
 }
 
-const About = () => {
+const About = ({t}) => {
+  const services = getServices();
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={`${styles.heroHeadText} mt-4`}>Overview</h2>
+        <p className={styles.sectionSubText}>{t('about_introduction')}</p>
+        <h2 className={`${styles.heroHeadText} mt-4`}>{t('about_overview')}</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl, leading-[30px]">
-        I am a software developer based in Quito - Ecuador with a passion for
-        crafting remarkable digital experiences that enhance people's lives with
-        convenience and delight. Through my own empirical learning, I have even
-        created this portfolio from scratch. Despite my relatively modest
-        experience, I thrive on challenges and possess a keen aptitude for rapid
-        learning. Ready to take on any test!
+        {t('about_text')}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => {
           return (
-            <ServiceCard key={service.title} index={index} {...service} />
+            <ServiceCard key={index} index={index} {...service} />
           );
         })}
       </div>

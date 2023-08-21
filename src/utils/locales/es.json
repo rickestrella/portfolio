@@ -1,0 +1,32 @@
+{
+    "hero_greeting": "¡Hola! Soy ",
+    "hero_text": "Soy un desarrollador web ubicado en Quito - Ecuador, apasionado por crear experiencias digitales notables.",
+  
+    "about_introduction": "Introducción",
+    "about_overview": "Resumen",
+    "about_text": "Soy un desarrollador de software ubicado en Quito - Ecuador, apasionado por crear experiencias digitales notables que mejoren la vida de las personas con comodidad y deleite. A través de mi propio aprendizaje empírico, incluso he creado este portafolio desde cero. A pesar de mi experiencia relativamente corta, prospero ante los desafíos y tengo una aptitud aguda para el aprendizaje rápido. ¡Listo para enfrentar cualquier prueba!",
+  
+    "experience_title": "Lo que he hecho hasta ahora",
+    "experience_subtitle": "Experiencia laboral",
+  
+    "my_work": "Mi Trabajo",
+    "projects": "Proyectos",
+    "work_showcase": "Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos del mundo real de mi trabajo.",
+    "coming_soon": "Próximamente...",
+    "work_check_out": "¡Echa un vistazo a mis borradores en",
+    "work_check_out_end": " mientras actualizo esta sección!",
+  
+    "testimonials_title": "Lo que dice la gente",
+    "testimonials_subtitle": "Testimonios",
+  
+    "contact_title": "Ponte en contacto",
+    "contact_subtitle": "¡Contáctame!",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "message": "Mensaje",
+    "sending": "Enviando",
+    "send": "Enviar",
+    "w_name": "¿Cuál es tu nombre?",
+    "w_email": "¿Cuál es tu correo electrónico?"
+  }
+  

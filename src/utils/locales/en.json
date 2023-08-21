@@ -1,0 +1,31 @@
+{
+    "hero_greeting": "Hi! I'm ",
+    "hero_text": "I am a web developer located in Quito - Ecuador  with a passion for crafting remarkable digital experiences.",
+
+    "about_introduction": "Introduction",
+    "about_overview": "Overview",
+    "about_text": "I am a software developer located in Quito - Ecuador with a passion for crafting remarkable digital experiences that enhance people's lives with convenience and delight. Through my own empirical learning, I have even created this portfolio from scratch. Despite my relatively modest experience, I thrive on challenges and possess a keen aptitude for rapid learning. Ready to take on any test!",
+
+    "experience_title": "What I have done so far",
+    "experience_subtitle": "Work experience",
+
+    "my_work": "My Work",
+    "projects": "Projects",
+    "work_showcase": "The following projects showcases my skills and experience through real-world examples of my work.",
+    "coming_soon": "Coming Soon...",
+    "work_check_out": "Check out my",
+    "work_check_out_end": "drafts while I update this section!",
+
+    "testimonials_title": "What others say",
+    "testimonials_subtitle": "Testimonials",
+
+    "contact_title": "Get in touch",
+    "contact_subtitle": "Contact me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "sending": "Sending",
+    "send": "Send",
+    "w_name": "What's your name?",
+    "w_email": "What's your email?"
+}

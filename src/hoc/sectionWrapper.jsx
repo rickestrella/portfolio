@@ -3,7 +3,10 @@ import { motion, stagger } from "framer-motion";
 import { styles } from "../style";
 import { staggerContainer } from "../utils/motion";
 
+import { useTranslation } from "react-i18next";
+
 const SectionWrapper = (Component, idNanme) => function HOC() {
+    const {t} = useTranslation();
     return (
         <motion.section
         variants={staggerContainer()}
@@ -15,7 +18,7 @@ const SectionWrapper = (Component, idNanme) => function HOC() {
             <span className="hash-span" id={idNanme}>
                 &nbsp;
             </span>
-            <Component />
+            <Component t={t}/>
         </motion.section>
     )
 }

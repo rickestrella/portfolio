@@ -39,7 +39,7 @@ const FeedbackCard = ({
   </motion.div>
 );
 
-const Feedbacks = () => {
+const Feedbacks = ({t}) => {
 
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
@@ -47,8 +47,8 @@ const Feedbacks = () => {
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={`${styles.sectionSubText}`}>What others say</p>
-          <h2 className={`${styles.sectionHeadText}`}>Testimonials</h2>
+          <p className={`${styles.sectionSubText}`}>{t('testimonials_title')}</p>
+          <h2 className={`${styles.sectionHeadText}`}>{t('testimonials_subtitle')}</h2>
         </motion.div>
       </div>
 
@@ -65,7 +65,7 @@ const Feedbacks = () => {
           </>
         ) : (
           <>
-          <h1>Coming Soon...</h1>
+          <h1>{t('coming_soon')}</h1>
           </>
         )}
       </div>
