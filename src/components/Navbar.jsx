@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../style";
-import { navLinks } from "../constants";
-import { logo, menu, close, Rlogo } from "../assets";
+import { getNavLinks } from "../constants";
+import { menu, close, Rlogo } from "../assets";
 import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
@@ -15,6 +15,8 @@ const Navbar = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
+
+  const navLinks= getNavLinks();
 
   return (
     <nav

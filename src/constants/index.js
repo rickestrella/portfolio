@@ -554,4 +554,8 @@ const {
     return i18n.language === 'es' ? esServices : enServices;
   }
 
-  export { navLinks, services, technologies, experiences, testimonials, projects, getExperiences, getServices };
+  const getNavLinks = ()  => {
+    return i18n.language === 'es' ? esNavLinks : enNavLinks;
+  }
+
+  export { navLinks, services, technologies, experiences, testimonials, projects, getExperiences, getServices, getNavLinks };
