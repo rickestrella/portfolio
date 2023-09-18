@@ -3,7 +3,7 @@ import SectionWrapper from "../hoc/sectionWrapper";
 import { motion } from "framer-motion";
 import { styles } from "../style";
 import { github } from "../assets";
-import { projects } from "../constants";
+import { getProjects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -54,6 +54,8 @@ const ProjectCard = ({
 );
 
 const Works = ({t}) => {
+  const projects = getProjects();
+  
   return (
     <>
       <motion.div variants={textVariant()}>

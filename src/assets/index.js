@@ -27,8 +27,8 @@ import cpn from "./company/cpn.jpg"
 import logex from "./company/logex.jpeg"
 import tipti from "./company/tipti.png"
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import rogys from "./rogys.png";
+import reactdashboard from "./reactdashboard.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -54,8 +54,8 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
+  rogys,
+  reactdashboard,
   tripguide,
   amparabox,
   cpn,
