@@ -6,7 +6,7 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
   const scale = isMobile ? 0.25 : 0.7;
-  const position = isMobile ? [0, -2.85, -0.35] : [0, -2.75, -1.5];
+  const position = isMobile ? [0, -1.85, -0.35] : [0, -2.75, -1.5];
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="black" />
@@ -49,11 +49,13 @@ const ComputersCanvas = () => {
     };
   }, []); // Empty dependency array means this effect runs only once after initial render
 
+  const fov = isMobile ? 25 : 25
+
   return (
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: fov }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
