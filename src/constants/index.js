@@ -195,7 +195,7 @@ const enConstants = {
             },
         ],
         image: reactdashboard,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/rickestrella/demo_dashboard",
     },
     {
         name: "E-Commerce",
@@ -216,7 +216,7 @@ const enConstants = {
             },
         ],
         image: rogys,
-        source_code_link: "https://github.com/",
+        source_code_link: "https://github.com/rickestrella/rogys-ecommerce",
     },
   ]
 }
