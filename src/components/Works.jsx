@@ -88,7 +88,7 @@ const Works = ({t}) => {
             <div className="relative w-full h-fit">
               <h3 className={`${styles.paddingX} pt-8 text-lg`}>{t('coming_soon')}</h3>
               <div className="w-full px-8 md:px-6 py-16 md:py-10 text-xl">
-                <p>{t('work_check_out')} &nbsp;<a className="blue-text-gradient !underline hover:underline" href="https://codepen.io/rick1295/" target="_blank">Codepen.io</a> &nbsp; {t('work_check_out_end')}</p>
+                <p>{t('work_check_out')} &nbsp;<a className="blue-text-gradient !underline hover:underline" href="https://codepen.io/rick1295/" target="_blank" rel="noreferrer noopener">Codepen.io</a> &nbsp; {t('work_check_out_end')}</p>
               </div>
             </div>
           </div>
